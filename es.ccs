@@ -1,0 +1,253 @@
+@importar URL('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700 ;1,900&display=intercambio');
+
+
+*{
+    margen: 0;
+    relleno: 0;
+    tamaño de caja: cuadro de borde;
+    familia de fuentes: 'Source Sans Pro', sans-serif;
+}
+
+encabezamiento{
+    ancho: 100%;
+    altura: 80px;
+    margen superior: 40px;
+    posición: fijo;
+    índice z: 1;
+    relleno: 40px;
+}
+
+.contenedor__menú{
+    ancho máximo: 1200px;
+    altura: 100%;
+    margen: automático;
+    pantalla: flexible;
+    justificar-contenido: espacio-entre;
+}
+
+.logo{
+    altura: 100%;
+    pantalla: flexible;
+    alinear elementos: centro;
+}
+
+.imagen del logotipo{
+    ancho: 60px;
+
+}
+
+.menú{
+    pantalla: flexible;
+    alinear elementos: centro;
+}
+
+.menú ul{
+    pantalla: flexible;
+}
+
+.menú ul li{
+    estilo de lista: ninguno;
+    margen izquierdo: 36px;
+}
+
+.menú ul li a{
+    texto-decoración: ninguno;
+    tamaño de fuente: 16px;
+    color: #fff;
+    transformación de texto: mayúsculas;
+}
+
+#seleccionado{
+    fondo: #b15df6;
+    relleno: 10px 40px;
+    borde-radio: 50px;
+}
+
+.menú de navegación img{
+    pantalla: ninguno;
+}
+
+.menú #btn_menu{
+    pantalla: ninguno;
+}
+
+
+/*CUBRIR*/
+
+
+.container__cover{
+    ancho: 100%;
+    altura: 800px;
+    imagen de fondo: url(../images/Background-page.svg);
+    posición de fondo: derecha;
+    repetición de fondo: sin repetición;
+    relleno: 40px;
+}
+
+.cubrir{
+    ancho máximo: 1200px;
+    altura: 100%;
+    margen: automático;
+    pantalla: flexible;
+    alinear elementos: centro;
+    justificar-contenido: espacio-entre;
+}
+
+.container__cover .text{
+    ancho máximo: 400px;
+}
+
+.container__cover .texto h1{
+    tamaño de fuente: 36px;
+    peso de fuente: 600;
+}
+
+.container__cover .text p{
+    tamaño de fuente: 18px;
+    margen superior: 40px;
+}
+
+.container__cover .entrada de texto{
+    relleno: 18px 80px;
+    borde: ninguno;
+    tamaño de fuente: 16px;
+    borde-radio: 50px;
+    margen superior: 40px;
+    fondo: degradado lineal (a la derecha, #b2b7fa, #964df5);
+    color: #fff;
+    cursor: puntero;
+    sombra de cuadro: 1px 1px 30px -12px #a44df5;
+    transición: los 300 ms;
+}
+
+.container__cover .entrada de texto: hover{
+    caja-sombra: 1px 1px 30px -6px #7a4df5;
+}
+
+
+.container__cover .svg img{
+    ancho: 600px;
+    animación: move-vector 4s lineal infinito;
+}
+
+@keyframes move-vector {
+    0%{
+        transformar: traducir Y (15px);
+    }50%{
+        transformar: traducir Y (0px);
+    }100%{
+        transformar: traducir Y (15px);
+    }
+}
+
+
+/*Haciendo la página Responsive*/
+
+@pantalla multimedia y (ancho máximo: 1700px){
+
+    .container__cover{
+        posición de fondo: 50%;
+    }
+
+}
+
+@pantalla multimedia y (ancho máximo: 1200px){
+
+    encabezamiento{
+        relleno: 40px;
+    }
+
+    .container__cover{
+        posición de fondo: -100px;
+    }
+
+    .container__cover .svg img{
+        ancho: 500px;
+    }
+
+}
+
+@pantalla multimedia y (ancho máximo: 1020px){
+
+    .container__cover{
+        imagen de fondo: url("");
+        color de fondo: #9c86fd;
+    }
+
+    .container__cover .svg img{
+        pantalla: ninguno;
+    }
+
+    .container__cover .text{
+        ancho máximo: 600px;
+    }
+
+}
+
+@pantalla multimedia y (ancho máximo: 720px){
+
+    .menú de navegación{
+        posición: fijo;
+        superior: 0;
+        derecha: -250px;
+        fondo: blanco;
+        ancho: 250px;
+        altura: 100vh;
+        relleno: 40px;
+        índice z: 1;
+        transición: los 300 ms;
+    }
+
+    .menú ul{
+        dirección de flexión: columna;
+        margen superior: 40px;
+    }
+
+    .menú ul li{
+        margen superior: 30px;
+        margen izquierdo: 0;
+    }
+
+    .menú ul li a{
+        color: #bebebe;
+    }
+
+    #seleccionado{
+        fondo: ninguno;
+        relleno: 0px;
+        borde-radio: ninguno;
+        color: #935df6;
+    }
+
+    .menú de navegación img{
+        bloqueo de pantalla;
+        ancho: 60px;
+    }
+
+    #back_menu{
+        posición: fijo;
+        superior: 0;
+        izquierda: 0;
+        ancho: 100%;
+        altura: 100vh;
+        fondo: rgba(0,0,0,0.5);
+        pantalla: ninguno;
+    }
+
+    .menú #btn_menu{
+        pantalla: flexible;
+        alinear elementos: centro;
+        justificar-contenido: centro;
+        ancho: 50px;
+        altura: 50px;
+        fondo: rgba(255, 255, 255, 0.1);
+        tamaño de fuente: 24px;
+        borde-radio: 50px;
+        cursor: puntero;
+        transición: los 300 ms;
+    }
+
+    .menu #btn_menu: pasar el cursor{
+        fondo: rgba(255, 255, 255, 0.2);
+    }
+}
